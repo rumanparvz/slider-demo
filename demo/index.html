@@ -27,26 +27,6 @@
         <!-- /滑动验证 -->
         <div class="weui_btn_area" style="width: 500px">
             <button class="btn btn-primary" id="reset">reset</button>
-        </div>
-        <button id="temp" style="display:none;"></button>
-    </body>
-    <script type="text/javascript" src="../dist/script/jquery-2.1.1/jquery.min.js"></script>
-    <!-- 滑动插件 -->
-    <script type="text/javascript" src="../dist/script/drag.js"></script>
-    <!-- 弹框插件 -->
-    <script type="text/javascript" src="showToast.js"></script>
-    <script type="text/javascript" src="../dist/script/browser.js"></script>
-    <script type="text/javascript">
-        log = [];
-        logs = "------------------start------------------\n";
-        back = 0;
-        click = false;
-        function generateUUID() {
-            var d = new Date().getTime();
-            var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-              var r = (d + Math.random()*16)%16 | 0;
-              d = Math.floor(d/16);
-              return (c=='x' ? r : (r&0x3|0x8)).toString(16);
             });
             return uuid;
         };
